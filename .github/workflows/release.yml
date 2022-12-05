@@ -1,0 +1,29 @@
+name: Build Release
+
+on:
+  release:
+    types: [published]
+
+env:
+  dependencies: "texlive-base texlive-binaries texlive-fonts-extra texlive-fonts-extra-links texlive-fonts-recommended texlive-lang-italian texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-luatex texlive-pictures texlive-plain-generic texlive-xetex"
+
+jobs:
+  generate_cv:
+    name: Generate cv
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: sudo apt install ${{ env.dependencies }}
+
+      - name: Compile document
+        run: xelatex cv.tex
+
+#     - name: Upload document to artifacts
+#       uses: actions/github-action-publish-binaries@master
+#       env:
+#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#       with:
+#         args: cv.pdf
