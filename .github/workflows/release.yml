@@ -2,10 +2,10 @@ name: Build release
 
 on:
   release:
-    types: [published]
+    types: published
 
 env:
-  dependencies: "texlive-base texlive-binaries texlive-fonts-extra texlive-fonts-extra-links texlive-fonts-recommended texlive-lang-italian texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-luatex texlive-pictures texlive-plain-generic texlive-xetex"
+  dependencies: "texlive-lang-italian texlive-xetex"
 
 jobs:
   generate_cv:
@@ -26,6 +26,6 @@ jobs:
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: cv.pdf
-          asset_name: cv.pdf
+          asset_name: cv_${{ github.ref_name }}.pdf
           tag: ${{ github.ref }}
           overwrite: true
