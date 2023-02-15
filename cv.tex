@@ -21,163 +21,163 @@
 %\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
 %%% modified for Karol Kozioł for ShareLaTeX use
 \setmainfont[
-SmallCapsFont = fonts/Fontin-SmallCaps.otf,
-BoldFont = fonts/Fontin-Bold.otf,
-ItalicFont = fonts/Fontin-Italic.otf
-]
-{Fontin.otf}
-%%%
+  SmallCapsFont = fonts/Fontin-SmallCaps.otf,
+  BoldFont = fonts/Fontin-Bold.otf,
+  ItalicFont = fonts/Fontin-Italic.otf
+  ]
+  {Fontin.otf}
+  %%%
 
-%CV Sections inspired by:
-%http://stefano.italians.nl/archives/26
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{3pt}{3pt}
-%Tweak a bit the top margin
-%\addtolength{\voffset}{-1.3cm}
+  %CV Sections inspired by:
+  %http://stefano.italians.nl/archives/26
+  \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+  \titlespacing{\section}{0pt}{3pt}{3pt}
+  %Tweak a bit the top margin
+  %\addtolength{\voffset}{-1.3cm}
 
-%Italian hyphenation for the word: ''corporations''
-\hyphenation{im-pre-se}
+  %Italian hyphenation for the word: ''corporations''
+  \hyphenation{im-pre-se}
 
-%-------------WATERMARK TEST [**not part of a CV**]---------------
-\usepackage[absolute]{textpos}
+  %-------------WATERMARK TEST [**not part of a CV**]---------------
+  \usepackage[absolute]{textpos}
 
-\setlength{\TPHorizModule}{30mm}
-\setlength{\TPVertModule}{\TPHorizModule}
-\textblockorigin{2mm}{0.65\paperheight}
-\setlength{\parindent}{0pt}
+  \setlength{\TPHorizModule}{30mm}
+  \setlength{\TPVertModule}{\TPHorizModule}
+  \textblockorigin{2mm}{0.65\paperheight}
+  \setlength{\parindent}{0pt}
 
-%--------------------BEGIN DOCUMENT----------------------
-\begin{document}
+  %--------------------BEGIN DOCUMENT----------------------
+  \begin{document}
 
-%WATERMARK TEST [**not part of a CV**]---------------
-%\font\wm=''Baskerville:color=787878'' at 8pt
-%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
-%{\wm
-%	\begin{textblock}{1}(0,0)
-%		\rotatebox{-90}{\parbox{500mm}{
-%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for
-%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
-%		}
-%	}
-%	\end{textblock}
-%}
+  %WATERMARK TEST [**not part of a CV**]---------------
+  %\font\wm=''Baskerville:color=787878'' at 8pt
+  %\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+  %{\wm
+  %	\begin{textblock}{1}(0,0)
+  %		\rotatebox{-90}{\parbox{500mm}{
+  %			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for
+  %			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+  %		}
+  %	}
+  %	\end{textblock}
+  %}
 
-\pagestyle{empty} % non-numbered pages
+  \pagestyle{empty} % non-numbered pages
 
-\font\fb=''[cmr10]'' %for use with \LaTeX command
+  \font\fb=''[cmr10]'' %for use with \LaTeX command
 
-%--------------------TITLE-------------
-\par{\centering
-		{\Huge André Luís \Huge{Carvalho} Moreira
-	}\bigskip\par}
+  %--------------------TITLE-------------
+  \par{\centering
+  {\Huge André Luís \Huge{Carvalho} Moreira
+  }\bigskip\par}
 
-%--------------------SECTIONS-----------------------------------
-%Section: Personal Data
-\section{Personal Data}
+  %--------------------SECTIONS-----------------------------------
+  %Section: Personal Data
+  \section{Personal Data}
 
-\begin{tabular}{rl}
+  \begin{tabular}{rl}
     %\textsc{Place and Date of Birth:} & Someplace, Italy  | dd Month 1912 \\
     \textsc{Location:}   & Fortaleza, Ceará, Brazil \\
     \textsc{Mobile:}     & +55 85 992-703-813\\
     \textsc{email:}     & {alcm99@gmail.com}
-\end{tabular} \\
+  \end{tabular} \\
 
-%Section: Work Experience 1
-\section{Work Experience}
-\begin{tabular}{r|p{11cm}}
+  %Section: Work Experience 1
+  \section{Work Experience}
+  \begin{tabular}{r|p{11cm}}
 
-\textsc{Oct 2020 - Current} &\textbf{Senior System Analyst at PagSeguro via Invillia - Araraquara, Brazil} \\&\footnotesize{Works as senior system analyst, leading a team responsible for developing embedded software for a family of POS (Point of sale) devices running Android, as well as developing native libraries and maintaining legacy software for the same platforms.}
-\\ & \footnotesize{\textbf{Keywords:} C/C++, CMake, Android, GTest/GMock, JNI, POS.}
-\\\multicolumn{2}{c}{} \\
+    \textsc{Oct 2020 - Current} &\textbf{Senior System Analyst at PagSeguro via Invillia - Araraquara, Brazil} \\&\footnotesize{Works as senior system analyst, leading a team responsible for developing embedded software for a family of POS (Point of sale) devices running Android, as well as developing native libraries and maintaining legacy software for the same platforms.}
+    \\ & \footnotesize{\textbf{Keywords:} C/C++, CMake, Android, GTest/GMock, JNI, POS.}
+    \\\multicolumn{2}{c}{} \\
 
-\textsc{Mar 2020 - Mar 2021} &\textbf{Software Development Analyst at HPE via Instituto Atlântico - Fortaleza, Brazil} \\&\footnotesize{Integrated the R\&D team responsible for the development of security solutions targeting cloud environments. The developed solutions provides an efficient way to protect virtualized and bare-metal machines running unix-like operating systems against tampering, using techniques like VM introspection and kernel data structures analyzing.}
-\\ & \footnotesize{\textbf{Keywords:} C, Python, Linux, Kernel programming, VM introspection, KUnit, Robot framework, Security.}
-\\\multicolumn{2}{c}{} \\
+    \textsc{Mar 2020 - Mar 2021} &\textbf{Software Development Analyst at HPE via Instituto Atlântico - Fortaleza, Brazil} \\&\footnotesize{Integrated the R\&D team responsible for the development of security solutions targeting cloud environments. The developed solutions provides an efficient way to protect virtualized and bare-metal machines running unix-like operating systems against tampering, using techniques like VM introspection and kernel data structures analyzing.}
+    \\ & \footnotesize{\textbf{Keywords:} C, Python, Linux, Kernel programming, VM introspection, KUnit, Robot framework, Security.}
+    \\\multicolumn{2}{c}{} \\
 
-\textsc{Sep 2018 - Mar 2020} &\textbf{Software Developer at Datacom via LDS/IFCE - Fortaleza, Brazil} \\&\emph{Software Development Laboratory of Federal Institute of Education, Science
-and Technology of Ceará}\\&\footnotesize{Worked as embedded software developer, focusing on the development of applications and technologies targeting the computer networks context. Integrated the platform team, being responsible for developing device drivers - for SFP and PSU devices - targeting the PowerPC and X86 architectures. Furthermore,  made researches regarding white-box switches and network operating systems (NOS) as well.
-Also, integrated the services team, being responsible for developing CLI applications using YANG/ConfD, C/C++, Python and Shell script.}
-\\ & \footnotesize{\textbf{Keywords:} C/C++, Python, Shell script, ConfD,  GTest/GMock, Robot framework, Device tree, Device drivers, Linux, Buildroot.}
-\\\multicolumn{2}{c}{} \\
+    \textsc{Sep 2018 - Mar 2020} &\textbf{Software Developer at Datacom via LDS/IFCE - Fortaleza, Brazil} \\&\emph{Software Development Laboratory of Federal Institute of Education, Science
+    and Technology of Ceará}\\&\footnotesize{Worked as embedded software developer, focusing on the development of applications and technologies targeting the computer networks context. Integrated the platform team, being responsible for developing device drivers - for SFP and PSU devices - targeting the PowerPC and X86 architectures. Furthermore,  made researches regarding white-box switches and network operating systems (NOS) as well.
+    Also, integrated the services team, being responsible for developing CLI applications using YANG/ConfD, C/C++, Python and Shell script.}
+    \\ & \footnotesize{\textbf{Keywords:} C/C++, Python, Shell script, ConfD,  GTest/GMock, Robot framework, Device tree, Device drivers, Linux, Buildroot.}
+    \\\multicolumn{2}{c}{} \\
 
-\textsc{Dec 2017 - Sep 2018} & \textbf{Software Developer at Lenovo via LSBD/UFC - Fortaleza, Brazil} \\&\emph{Systems and Database Laboratory of Federal University of Ceará}\\&\footnotesize{Integrated the development team responsible for developing/maintaining a multiplatform software (worldwide used) for hardware diagnostics using C++ and Qt, and developing a multiplatform/multithreading/multiprocessing API responsible for providing the basic diagnostic functionalities for this software, using modern C++.}
-\\ & \footnotesize{\textbf{Keywords:} C++14, Qt, GTest/GMock, CMake, Linux.}
-\\\multicolumn{2}{c}{} \\
+    \textsc{Dec 2017 - Sep 2018} & \textbf{Software Developer at Lenovo via LSBD/UFC - Fortaleza, Brazil} \\&\emph{Systems and Database Laboratory of Federal University of Ceará}\\&\footnotesize{Integrated the development team responsible for developing/maintaining a multiplatform software (worldwide used) for hardware diagnostics using C++ and Qt, and developing a multiplatform/multithreading/multiprocessing API responsible for providing the basic diagnostic functionalities for this software, using modern C++.}
+    \\ & \footnotesize{\textbf{Keywords:} C++14, Qt, GTest/GMock, CMake, Linux.}
+    \\\multicolumn{2}{c}{} \\
 
-\textsc{Jan 2016 - Dec 2017} & \textbf{Software Developer at Datacom via LDS/IFCE - Fortaleza, Brazil} \\&\emph{Software Development Laboratory of Federal Institute of Education, Science
-and Technology of Ceará}\\&\footnotesize{Worked as embedded software developer, focusing on the development of computing network applications and protocols. Integrated the team responsible for implementing L3/L4 protocols, such as TWAMP (based on an open-source implementation of OWAMP) and VRRP (written from scratch), both developed based on technical specification (RFC) and using modern C++.}
-\\ & \footnotesize{\textbf{Keywords:} C/C++11, GTest/GMock, CMake, TCP/IP stack, Networking protocols, Linux.}
-\\\multicolumn{2}{c}{} \\
-\end{tabular}
+    \textsc{Jan 2016 - Dec 2017} & \textbf{Software Developer at Datacom via LDS/IFCE - Fortaleza, Brazil} \\&\emph{Software Development Laboratory of Federal Institute of Education, Science
+    and Technology of Ceará}\\&\footnotesize{Worked as embedded software developer, focusing on the development of computing network applications and protocols. Integrated the team responsible for implementing L3/L4 protocols, such as TWAMP (based on an open-source implementation of OWAMP) and VRRP (written from scratch), both developed based on technical specification (RFC) and using modern C++.}
+    \\ & \footnotesize{\textbf{Keywords:} C/C++11, GTest/GMock, CMake, TCP/IP stack, Networking protocols, Linux.}
+    \\\multicolumn{2}{c}{} \\
+  \end{tabular}
 
-\begin{tabular}{r|p{11cm}}
-\textsc{Aug 2014 - Jan 2016} & \textbf{Intern at IOCT - Fortaleza, Brazil}\\&\emph{Orion Institute of Science and Technology}\\&\footnotesize{Worked with embedded software on projects involving real-time audio and video recording/streaming and real-time audio acquisition/decoding using Freescale i.MX53 and i.MX6 based boards, respectively. I integrated the team responsible for developing the frontend/backend of the embedded application, using C/C++ and Qt, and generating/maintaining the operating system images (based on linux) used by both the targets, using YOCTO.}
-\\ & \footnotesize{\textbf{Keywords:} C/C++, Qt, Yocto, Device tree, Device drivers, Linux.}
-\\\multicolumn{2}{c}{} \\
+  \begin{tabular}{r|p{11cm}}
+    \textsc{Aug 2014 - Jan 2016} & \textbf{Intern at IOCT - Fortaleza, Brazil}\\&\emph{Orion Institute of Science and Technology}\\&\footnotesize{Worked with embedded software on projects involving real-time audio and video recording/streaming and real-time audio acquisition/decoding using Freescale i.MX53 and i.MX6 based boards, respectively. I integrated the team responsible for developing the frontend/backend of the embedded application, using C/C++ and Qt, and generating/maintaining the operating system images (based on linux) used by both the targets, using YOCTO.}
+    \\ & \footnotesize{\textbf{Keywords:} C/C++, Qt, Yocto, Device tree, Device drivers, Linux.}
+    \\\multicolumn{2}{c}{} \\
 
-\textsc{Sep 2013 - Aug 2014} & \textbf{Undergraduate Researcher at GCEM - Fortaleza, Brazil} \\&\emph{Group of research in embedded computing at Federal Institute of Education,
-Science and Technology of Ceara, IFCE}\\&\footnotesize{Worked with R\&D. I was responsible for developing a PoC of a modular Indoor positioning system based on ultrassound and infrared communication. Such system aimed to be used as part of an autonomous robot. The prototypes were developed in a PIC18-based board, using C.}
-\\ & \footnotesize{\textbf{Keywords:} C, PIC18, PCB Design, Altium designer, Digital electronics.}
-\\\multicolumn{2}{c}{}
+    \textsc{Sep 2013 - Aug 2014} & \textbf{Undergraduate Researcher at GCEM - Fortaleza, Brazil} \\&\emph{Group of research in embedded computing at Federal Institute of Education,
+    Science and Technology of Ceara, IFCE}\\&\footnotesize{Worked with R\&D. I was responsible for developing a PoC of a modular Indoor positioning system based on ultrassound and infrared communication. Such system aimed to be used as part of an autonomous robot. The prototypes were developed in a PIC18-based board, using C.}
+    \\ & \footnotesize{\textbf{Keywords:} C, PIC18, PCB Design, Altium designer, Digital electronics.}
+    \\\multicolumn{2}{c}{}
 
-\end{tabular}
+  \end{tabular}
 
-%Section: Open Source Contributions
-\section{Open Source Contributions}
-\begin{tabular}{r|p{11cm}}
-\textsc{Dec 2022 - Current} & \textbf{Void Linux} \\&\emph{Linux distribution}
-  \\&\footnotesize{Contribute actively with documentation and package updating at the distro's package repository (void-packages).}
-\\\multicolumn{2}{c}{}
-\end{tabular}
+  %Section: Open Source Contributions
+  \section{Open Source Contributions}
+  \begin{tabular}{r|p{11cm}}
+    \textsc{Dec 2022 - Current} & \textbf{Void Linux} \\&\emph{Linux distribution}
+    \\&\footnotesize{Contribute actively with documentation and package updating at the distro's package repository (void-packages).}
+    \\\multicolumn{2}{c}{}
+  \end{tabular}
 
-%Section:  Formal Education
-\section{Education}
-\begin{tabular}{rl}
-\textsc{Sep} 2013 - Interrupted & Bachelor of Computer Engineering \\ & \textbf{Federal Institute of Education, Science and Technology of Ceara, IFCE}, \\ & Fortaleza,  Brazil
-\end{tabular} \\
+  %Section:  Formal Education
+  \section{Education}
+  \begin{tabular}{rl}
+    \textsc{Sep} 2013 - Interrupted & Bachelor of Computer Engineering \\ & \textbf{Federal Institute of Education, Science and Technology of Ceara, IFCE}, \\ & Fortaleza,  Brazil
+  \end{tabular} \\
 
-%Section: Complementary Education
-\section{Complementary Education}
-\begin{tabular}{rl}
-\textsc Dec 2021 - Dec 2021 & Building debian packages\\ Institution & Kretcheu  \\ \textsc Credit hours & 30 hours \\&\\
-\textsc Aug 2020 - Aug 2020 & Vagrant for beginners \\ Institution & Udemy  \\ \textsc Credit hours & 1,5 hours \\&\\
-\textsc Jun 2020 - Jun 2020 & Docker: Essential tool for developers \\ Institution & Udemy  \\ \textsc Credit hours & 5,5 hours \\&\\
-\textsc Jun 2019 - Jul 2019 & Design patterns in modern C++ \\ Institution & Udemy  \\ \textsc Credit hours & 12 hours \\&\\
-\textsc Jun 2011 - Jul 2011 & Altium designer \\ Institution & University of Fortaleza  \\ \textsc Credit hours & 40 hours \\&\\
-\textsc Aug 2011 - Aug 2011 & PIC18 microcontrollers - C Programming \\ Institution & University of Fortaleza \\ \textsc Credit hours & 40 hours \\
-\end{tabular} \\
+  %Section: Complementary Education
+  \section{Complementary Education}
+  \begin{tabular}{rl}
+    \textsc Dec 2021 - Dec 2021 & Building debian packages\\ Institution & Kretcheu  \\ \textsc Credit hours & 30 hours \\&\\
+    \textsc Aug 2020 - Aug 2020 & Vagrant for beginners \\ Institution & Udemy  \\ \textsc Credit hours & 1,5 hours \\&\\
+    \textsc Jun 2020 - Jun 2020 & Docker: Essential tool for developers \\ Institution & Udemy  \\ \textsc Credit hours & 5,5 hours \\&\\
+    \textsc Jun 2019 - Jul 2019 & Design patterns in modern C++ \\ Institution & Udemy  \\ \textsc Credit hours & 12 hours \\&\\
+    \textsc Jun 2011 - Jul 2011 & Altium designer \\ Institution & University of Fortaleza  \\ \textsc Credit hours & 40 hours \\&\\
+    \textsc Aug 2011 - Aug 2011 & PIC18 microcontrollers - C Programming \\ Institution & University of Fortaleza \\ \textsc Credit hours & 40 hours \\
+  \end{tabular} \\
 
-%Section: Languages
-\section{Languages}
-\begin{tabular}{rl}
-\textsc{Portuguese:}& Mothertongue\\
-\textsc{English:}& Intermediate\\
-\textsc{Spanish:}& Basic\\
-\end{tabular}
+  %Section: Languages
+  \section{Languages}
+  \begin{tabular}{rl}
+    \textsc{Portuguese:}& Mothertongue\\
+    \textsc{English:}& Intermediate\\
+    \textsc{Spanish:}& Basic\\
+  \end{tabular}
 
 
-%Section: Skilss
-\section{Skills}
-\begin{center}
+  %Section: Skilss
+  \section{Skills}
+  \begin{center}
     \begin{tabular}{| l | l | l | l |}
-    \hline
-    Operating Systems & Linux-like and Windows\\ \hline
-    Programming Languages & C, C++ (11 and 14), Python and Shell script\\ \hline
-    Debuggers & GDB \\ \hline
-    Frameworks & Qt, GTest/GMock, KUnit, Flask and Robot\\ \hline
-    Version Control & Git\\ \hline
-    Build Tools & Make, CMake and Buildroot\\ \hline
-    Continuous Integration & Jenkins and Github Actions\\ \hline
-    Bugtrackers & Jira and Trello\\ \hline
-    Databases & MongoDb\\ \hline
-    Virtualization & Docker, LXC, Vagrant and Virtualbox\\ \hline
+      \hline
+      Operating Systems & Linux-like and Windows\\ \hline
+      Programming Languages & C, C++ (11 and 14), Python and Shell script\\ \hline
+      Debuggers & GDB \\ \hline
+      Frameworks & Qt, GTest/GMock, KUnit, Flask and Robot\\ \hline
+      Version Control & Git\\ \hline
+      Build Tools & Make, CMake and Buildroot\\ \hline
+      Continuous Integration & Jenkins and Github Actions\\ \hline
+      Bugtrackers & Jira and Trello\\ \hline
+      Databases & MongoDb\\ \hline
+      Virtualization & Docker, LXC, Vagrant and Virtualbox\\ \hline
     \end{tabular}
-\end{center}
+  \end{center}
 
-\section{Links}
-\begin{tabular}{rl}
-\textsc{Github:}& https://github.com/carvalhudo\\
-\textsc{Linkedin:}&https://www.linkedin.com/in/andré-carvalho-08202682 \\
-\end{tabular}
+  \section{Links}
+  \begin{tabular}{rl}
+    \textsc{Github:}& https://github.com/carvalhudo\\
+    \textsc{Linkedin:}&https://www.linkedin.com/in/andré-carvalho-08202682 \\
+  \end{tabular}
 
 \end{document}
