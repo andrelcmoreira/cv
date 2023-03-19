@@ -4,9 +4,6 @@ on:
   release:
     types: published
 
-env:
-  dependencies: "texlive-lang-italian texlive-xetex"
-
 jobs:
   generate_cv:
     name: Generate cv
@@ -15,11 +12,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: sudo apt install ${{ env.dependencies }}
-
       - name: Compile document
-        run: xelatex cv.tex
+        run: ./compile.sh
 
       - name: Upload document to release
         uses: svenstaro/upload-release-action@v2
