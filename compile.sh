@@ -11,7 +11,7 @@ if [ "$RET" = "" ]; then
 fi
 
 docker container run \
-  -v "$(pwd):/$PROJECT_NAME" \
+  -v "$(pwd)/src:/$PROJECT_NAME" \
   --rm \
   --name "$PROJECT_NAME" \
   "$PROJECT_NAME":"$VERSION"
