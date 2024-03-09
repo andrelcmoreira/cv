@@ -7,10 +7,10 @@ RET=$(docker images | awk '{print $1}' | grep -x "$PROJECT_NAME")
 if [ "$RET" = "" ]; then
   echo "building ${PROJECT_NAME} ..."
 
-  docker image build -t "${PROJECT_NAME}":"$VERSION"
+  docker build -t "${PROJECT_NAME}":"$VERSION" .
 fi
 
-docker container run \
+docker run \
   -v "$(pwd)/src:/$PROJECT_NAME" \
   --rm \
   --name "$PROJECT_NAME" \
